@@ -10,7 +10,7 @@ while True:
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     blur = cv2.GaussianBlur(gray, (3,3), 0)
     _, thresh = cv2.threshold(blur, 100, 255, cv2.THRESH_BINARY_INV)
-    config = r'--oem 3 --psm 6'  # ignore whitelist for testing
+    config = r'--oem 3 --psm 10'  # ignore whitelist for testing
     text = pytesseract.image_to_string(thresh, config=config).strip()
     digits_only = re.sub(r'\D', '', text)  # Keep digits only
     if digits_only:
