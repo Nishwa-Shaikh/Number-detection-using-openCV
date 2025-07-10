@@ -9,7 +9,7 @@ def nothing(x):
 
 cap = cv2.VideoCapture(0)
 cv2.namedWindow('Digit Detection')
-cv2.createTrackbar('Brightness', 'Digit Detection', 50, 100, nothing)
+cv2.createTrackbar('Brightness', 'Digit Detection', 50, 100, nothing) # It has level from 0 to 100 and by default it is kept 50.
 cv2.createTrackbar('Contrast', 'Digit Detection', 50, 100, nothing)
 
 last_detected = ""
