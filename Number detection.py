@@ -57,8 +57,6 @@ while True:
                 cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
 
     cv2.imshow('Digit Detection', adjusted)
-    cv2.imshow('Thresh', thresh)
-
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
