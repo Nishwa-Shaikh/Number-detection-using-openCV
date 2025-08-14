@@ -53,6 +53,7 @@ while True:
 
     display_text = f'Detected digits: {last_detected}' if last_detected else "No digits detected"
 
+
     cv2.putText(adjusted, display_text, (10, 30),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
 
